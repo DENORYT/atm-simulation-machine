@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atm-simulation-machine"
+version = "1.0.0"
+description = "A professional console ATM simulation in pure Python: PIN login, deposits, withdrawals, and mini-statements."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "DENORYT" }]
+keywords = ["atm", "banking", "simulation", "cli", "learning"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Education",
+    "Topic :: Terminals",
+]
+
+[project.scripts]
+atm = "atm.app:main"
+
+[project.urls]
+Repository = "https://github.com/DENORYT/atm-simulation-machine"
+Issues = "https://github.com/DENORYT/atm-simulation-machine/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
