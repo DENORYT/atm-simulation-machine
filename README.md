@@ -127,7 +127,7 @@ AtmCli(ATM(account)).run()
 
 ## Testing
 
-The test suite (34 tests) covers PIN hashing, the authentication state machine,
+The test suite (24 tests) covers PIN hashing, the authentication state machine,
 transaction rules, and full scripted CLI sessions:
 
 ```bash
